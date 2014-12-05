@@ -1,0 +1,17 @@
+{
+	"category" : "tauC-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"start",
+		"end",
+		"buffer",
+		"closed" ],
+	"name" : "TauCPipe",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

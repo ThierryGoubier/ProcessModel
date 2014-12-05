@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"in:out:state:world:" : "ThierryGoubier 11/18/2012 15:58" },
+	"instance" : {
+		"addIn:" : "ThierryGoubier 12/10/2013 17:12",
+		"addIn:size:" : "ThierryGoubier 12/10/2013 17:13",
+		"addOut:" : "ThierryGoubier 12/10/2013 17:14",
+		"addOut:size:" : "ThierryGoubier 12/10/2013 17:14",
+		"addPort:" : "ThierryGoubier 12/10/2013 17:12",
+		"checkPortName:" : "ThierryGoubier 12/10/2013 17:10",
+		"destinations" : "ThierryGoubier 12/7/2013 12:56",
+		"ends" : "ThierryGoubier 12/8/2013 14:07",
+		"exit" : "ThierryGoubier 11/19/2012 10:20",
+		"for:do:io:" : "ThierryGoubier 11/18/2012 17:56",
+		"fullyConnected" : "ThierryGoubier 11/18/2012 15:26",
+		"in:" : "ThierryGoubier 12/10/2013 17:15",
+		"initialize" : "ThierryGoubier 12/10/2013 17:47",
+		"next:" : "ThierryGoubier 11/18/2012 15:53",
+		"next:with:" : "ThierryGoubier 11/18/2012 15:53",
+		"out:" : "ThierryGoubier 12/10/2013 17:15",
+		"portNamed:" : "ThierryGoubier 12/10/2013 17:05",
+		"runStep" : "ThierryGoubier 11/19/2012 08:06",
+		"state:" : "ThierryGoubier 12/10/2013 17:16",
+		"step" : "ThierryGoubier 11/18/2012 18:08",
+		"world:" : "ThierryGoubier 11/18/2012 15:58" } }

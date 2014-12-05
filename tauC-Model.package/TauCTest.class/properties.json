@@ -1,0 +1,14 @@
+{
+	"category" : "tauC-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "TauCTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

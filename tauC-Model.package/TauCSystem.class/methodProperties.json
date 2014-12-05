@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"new" : "ThierryGoubier 11/18/2012 16:17" },
+	"instance" : {
+		"exit:" : "ThierryGoubier 11/18/2012 15:11",
+		"exploreInRoassal" : "ThierryGoubier 12/10/2013 14:21",
+		"fullyConnected" : "ThierryGoubier 11/18/2012 15:25",
+		"haltSystem" : "ThierryGoubier 11/18/2012 15:14",
+		"initialize" : "ThierryGoubier 11/18/2012 16:18",
+		"run" : "ThierryGoubier 11/18/2012 15:13",
+		"start:" : "ThierryGoubier 11/18/2012 15:59",
+		"step" : "ThierryGoubier 11/19/2012 10:14" } }

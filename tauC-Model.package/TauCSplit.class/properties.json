@@ -1,0 +1,15 @@
+{
+	"category" : "tauC-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"size",
+		"amount" ],
+	"name" : "TauCSplit",
+	"pools" : [
+		 ],
+	"super" : "TauCTask",
+	"type" : "normal" }

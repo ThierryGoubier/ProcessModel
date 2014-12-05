@@ -1,0 +1,14 @@
+{
+	"category" : "tauC-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TauCExitNotification",
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

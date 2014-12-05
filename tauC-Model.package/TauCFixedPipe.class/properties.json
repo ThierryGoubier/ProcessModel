@@ -1,0 +1,14 @@
+{
+	"category" : "tauC-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"size" ],
+	"name" : "TauCFixedPipe",
+	"pools" : [
+		 ],
+	"super" : "TauCPipe",
+	"type" : "normal" }

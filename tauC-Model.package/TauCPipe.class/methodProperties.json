@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"from:to:" : "ThierryGoubier 11/16/2012 17:12",
+		"new" : "ThierryGoubier 11/18/2012 16:10" },
+	"instance" : {
+		"buffer" : "ThierryGoubier 11/16/2012 17:01",
+		"canRead:" : "ThierryGoubier 11/19/2012 10:21",
+		"canWrite:" : "ThierryGoubier 11/18/2012 18:06",
+		"close" : "ThierryGoubier 11/18/2012 09:00",
+		"end" : "ThierryGoubier 11/16/2012 15:57",
+		"end:" : "ThierryGoubier 11/16/2012 15:57",
+		"initialize" : "ThierryGoubier 11/18/2012 16:40",
+		"isConnected" : "ThierryGoubier 11/18/2012 15:29",
+		"read:" : "ThierryGoubier 11/19/2012 10:15",
+		"start" : "ThierryGoubier 11/16/2012 15:56",
+		"start:" : "ThierryGoubier 11/16/2012 15:56",
+		"write:" : "ThierryGoubier 11/18/2012 14:08" } }

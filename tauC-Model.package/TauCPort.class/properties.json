@@ -1,0 +1,18 @@
+{
+	"category" : "tauC-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"component",
+		"name",
+		"pipe",
+		"size",
+		"index" ],
+	"name" : "TauCPort",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,22 @@
+{
+	"class" : {
+		"named:on:" : "ThierryGoubier 11/18/2012 14:27",
+		"named:on:pipe:" : "ThierryGoubier 11/18/2012 14:27",
+		"new:named:on:" : "ThierryGoubier 11/18/2012 14:28" },
+	"instance" : {
+		"at:" : "ThierryGoubier 12/10/2013 17:24",
+		"component" : "ThierryGoubier 11/16/2012 17:25",
+		"component:" : "ThierryGoubier 11/16/2012 17:25",
+		"connectTo:" : "ThierryGoubier 12/10/2013 17:37",
+		"connectTo:size:" : "ThierryGoubier 12/10/2013 17:34",
+		"index:" : "ThierryGoubier 11/18/2012 17:03",
+		"isConnected" : "ThierryGoubier 11/18/2012 15:28",
+		"isIn" : "ThierryGoubier 11/16/2012 17:29",
+		"isOut" : "ThierryGoubier 11/16/2012 17:29",
+		"isReadyForConnect" : "ThierryGoubier 12/10/2013 17:36",
+		"name" : "ThierryGoubier 11/16/2012 17:25",
+		"name:" : "ThierryGoubier 11/16/2012 17:25",
+		"pipe" : "ThierryGoubier 11/18/2012 17:21",
+		"pipe:" : "ThierryGoubier 12/10/2013 17:38",
+		"size" : "ThierryGoubier 11/18/2012 14:24",
+		"size:" : "ThierryGoubier 11/18/2012 17:11" } }

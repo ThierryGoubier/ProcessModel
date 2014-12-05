@@ -1,0 +1,16 @@
+{
+	"category" : "tauC-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"stateFunctions",
+		"nextState",
+		"ports" ],
+	"name" : "TauCTask",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
