@@ -1,12 +1,13 @@
 {
 	"class" : {
-		"new" : "ThierryGoubier 11/18/2012 16:17" },
+		"new" : "ThierryGoubier 12/5/2014 21:10:47" },
 	"instance" : {
-		"exit:" : "ThierryGoubier 11/18/2012 15:11",
-		"exploreInRoassal" : "ThierryGoubier 12/10/2013 14:21",
-		"fullyConnected" : "ThierryGoubier 11/18/2012 15:25",
-		"haltSystem" : "ThierryGoubier 11/18/2012 15:14",
-		"initialize" : "ThierryGoubier 11/18/2012 16:18",
-		"run" : "ThierryGoubier 11/18/2012 15:13",
-		"start:" : "ThierryGoubier 11/18/2012 15:59",
-		"step" : "ThierryGoubier 11/19/2012 10:14" } }
+		"buildSlotsInView:" : "ThierryGoubier 12/7/2014 21:29",
+		"exit:" : "ThierryGoubier 12/5/2014 21:10:47",
+		"exploreInRoassal" : "ThierryGoubier 12/7/2014 22:08",
+		"fullyConnected" : "ThierryGoubier 12/5/2014 21:10:47",
+		"haltSystem" : "ThierryGoubier 12/5/2014 21:10:47",
+		"initialize" : "ThierryGoubier 12/5/2014 21:10:47",
+		"run" : "ThierryGoubier 12/5/2014 21:10:47",
+		"start:" : "ThierryGoubier 12/5/2014 21:10:47",
+		"step" : "ThierryGoubier 12/5/2014 21:10:47" } }

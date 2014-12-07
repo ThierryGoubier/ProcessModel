@@ -5,8 +5,8 @@ testSend2Receive2Exit
 	| s sender reader |
 	s := TauCSystem new.
 	sender := TauCTask
-		in: #()
-		out: #(#send)
+		named: 'sender'
+		out: #send
 		state:
 			{{#main.
 			[ :send | 
@@ -22,8 +22,8 @@ testSend2Receive2Exit
 			2}}}}
 		world: s.
 	reader := TauCTask
-		in: #(#read)
-		out: #()
+		named: 'reader'
+		in: #read
 		state:
 			{{#main.
 			[ :read | 

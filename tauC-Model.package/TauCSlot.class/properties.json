@@ -1,0 +1,15 @@
+{
+	"category" : "tauC-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"slot",
+		"pipe" ],
+	"name" : "TauCSlot",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

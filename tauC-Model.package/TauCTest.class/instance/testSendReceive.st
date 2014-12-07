@@ -5,16 +5,16 @@ testSendReceive
 	| s sender reader |
 	s := TauCSystem new.
 	sender := TauCTask
-		in: #()
-		out: #(#send)
+		named: 'sender'
+		out: #send
 		state:
 			{{#main.
 			[ :send | send at: 1 put: 5. Transcript show: 'Send 5'; cr ].
 			{{#send. nil. 1}}}}
 		world: s.
 	reader := TauCTask
-		in: #(read)
-		out: #()
+		named: 'reader'
+		in: #read
 		state:
 			{{#main.
 			[ :read | Transcript show: 'Received ', read first printString; cr ].

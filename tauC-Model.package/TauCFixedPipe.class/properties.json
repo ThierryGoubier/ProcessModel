@@ -10,5 +10,5 @@
 	"name" : "TauCFixedPipe",
 	"pools" : [
 		 ],
-	"super" : "TauCPipe",
+	"super" : "TauCViewPipe",
 	"type" : "normal" }

@@ -1,0 +1,3 @@
+printing
+printString
+	^ '[ ' , slot printString , ' ]'

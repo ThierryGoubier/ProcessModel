@@ -1,12 +1,12 @@
 testing
 testSplit2
-	"Test a split with two readers. "
+	"Test a split with two readers, but splitting by 2."
 
 	| s split sender reader1 reader2 |
 	s := TauCSystem new.
 	split := TauCSplit new: 2 step: 2 in: s.
 	sender := TauCTask
-		in: #()
+		named: 'sender'
 		out: #(#send)
 		state:
 			{{#main.
@@ -22,8 +22,8 @@ testSplit2
 			2}}}}
 		world: s.
 	reader1 := TauCTask
-		in: #(#read)
-		out: #()
+		named: 'reader1'
+		in: #read
 		state:
 			{{#main.
 			[ :read | 
@@ -35,8 +35,8 @@ testSplit2
 			1}}}}
 		world: s.
 	reader2 := TauCTask
-		in: #(#read)
-		out: #()
+		named: 'reader2'
+		in: #read
 		state:
 			{{#main.
 			[ :read | 

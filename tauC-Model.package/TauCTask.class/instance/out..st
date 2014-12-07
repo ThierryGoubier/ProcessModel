@@ -2,6 +2,10 @@ initialize-release
 out: anArrayOfPorts
 	"Add all those symbolic ports as in ports. "
 
+	anArrayOfPorts isSymbol
+		ifTrue: [ 
+			self addPort: (TauCOutPort named: anArrayOfPorts on: self).
+			^ self ].
 	anArrayOfPorts
 		do: [ :each | 
 			each isArray

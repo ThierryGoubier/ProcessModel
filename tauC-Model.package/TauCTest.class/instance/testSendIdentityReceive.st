@@ -5,8 +5,8 @@ testSendIdentityReceive
 	| s sender transmit reader |
 	s := TauCSystem new.
 	sender := TauCTask
-		in: #()
-		out: #(#send)
+		named: 'sender'
+		out: #send
 		state:
 			{{#main.
 			[ :send | 
@@ -19,8 +19,9 @@ testSendIdentityReceive
 			1}}}}
 		world: s.
 	transmit := TauCTask
-		in: #(#read)
-		out: #(#send)
+		named: 'transmit'
+		in: #read
+		out: #send
 		state:
 			{{#main.
 			[ :send :read | 
@@ -36,7 +37,8 @@ testSendIdentityReceive
 			1}}}}
 		world: s.
 	reader := TauCTask
-		in: #(#read)
+		named: 'reader'
+		in: #read
 		out: #()
 		state:
 			{{#main.

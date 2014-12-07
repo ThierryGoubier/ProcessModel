@@ -6,8 +6,8 @@ testJoin
 	s := TauCSystem new.
 	join := TauCJoin new: 2 in: s.
 	sender1 := TauCTask
-		in: #()
-		out: #(#send)
+		named: 'sender1'
+		out: #send
 		state:
 			{{#main.
 			[ :send | 
@@ -20,8 +20,8 @@ testJoin
 			1}}}}
 		world: s.
 	sender2 := TauCTask
-		in: #()
-		out: #(#send)
+		named: 'sender2'
+		out: #send
 		state:
 			{{#main.
 			[ :send | 
@@ -34,8 +34,8 @@ testJoin
 			1}}}}
 		world: s.
 	reader := TauCTask
-		in: #(#read)
-		out: #()
+		named: 'reader'
+		in: #read
 		state:
 			{{#main.
 			[ :read | 
@@ -51,4 +51,4 @@ testJoin
 	(join portNamed: #output) connectTo: (reader portNamed: #read).
 	s fullyConnected.
 	s exploreInRoassal.
-	6 timesRepeat: [ s step ]
+	^ s

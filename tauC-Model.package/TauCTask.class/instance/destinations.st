@@ -1,3 +1,3 @@
 accessing
 destinations
-	^ (ports collect: [ :each | each destination ]) reject: [ :each | each == self ]
+	^ self ends reject: [ :each | each == self ]

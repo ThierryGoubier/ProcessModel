@@ -5,7 +5,7 @@ testSend2Receive
 	| s sender reader |
 	s := TauCSystem new.
 	sender := TauCTask
-		in: #()
+		named: 'sender'
 		out: #(#send)
 		state:
 			{{#main.
@@ -13,8 +13,8 @@ testSend2Receive
 			{{#send. nil. 2}}}}
 		world: s.
 	reader := TauCTask
+		named: 'reader'
 		in: #(read)
-		out: #()
 		state:
 			{{#main.
 			[ :read | Transcript show: 'Received ', read first printString; cr ].

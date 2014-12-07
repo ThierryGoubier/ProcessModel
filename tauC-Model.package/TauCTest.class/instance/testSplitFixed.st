@@ -6,8 +6,8 @@ testSplitFixed
 	s := TauCSystem new.
 	split := TauCSplit new: 2 in: s.
 	sender := TauCTask
-		in: #()
-		out: #(#send)
+		named: 'sender'
+		out: #send
 		state:
 			{{#main.
 			[ :send | 
@@ -22,7 +22,8 @@ testSplitFixed
 			2}}}}
 		world: s.
 	reader1 := TauCTask
-		in: #(#read)
+		named: 'reader1'
+		in: #read
 		out: #()
 		state:
 			{{#main.
@@ -35,8 +36,8 @@ testSplitFixed
 			1}}}}
 		world: s.
 	reader2 := TauCTask
-		in: #(#read)
-		out: #()
+		named: 'reader2'
+		in: #read
 		state:
 			{{#main.
 			[ :read | 

@@ -6,8 +6,8 @@ testSplit2FixedNoProgress
 	s := TauCSystem new.
 	split := TauCSplit new: 2 step: 2 in: s.
 	sender := TauCTask
-		in: #()
-		out: #(#send)
+		named: 'sender'
+		out: #send
 		state:
 			{{#main.
 			[ :send | 
@@ -22,8 +22,8 @@ testSplit2FixedNoProgress
 			2}}}}
 		world: s.
 	reader1 := TauCTask
-		in: #(#read)
-		out: #()
+		named: 'reader1'
+		in: #read
 		state:
 			{{#main.
 			[ :read | 
@@ -35,8 +35,8 @@ testSplit2FixedNoProgress
 			1}}}}
 		world: s.
 	reader2 := TauCTask
-		in: #(#read)
-		out: #()
+		named: 'reader2'
+		in: #read
 		state:
 			{{#main.
 			[ :read | 

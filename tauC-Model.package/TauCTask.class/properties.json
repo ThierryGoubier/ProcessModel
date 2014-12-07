@@ -8,7 +8,8 @@
 	"instvars" : [
 		"stateFunctions",
 		"nextState",
-		"ports" ],
+		"ports",
+		"name" ],
 	"name" : "TauCTask",
 	"pools" : [
 		 ],

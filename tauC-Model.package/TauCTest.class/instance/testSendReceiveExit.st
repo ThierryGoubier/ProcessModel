@@ -4,10 +4,11 @@ testSendReceiveExit
 
 	| s sender reader |
 	s := TauCSystem new.
-	sender := TauCTask new
-		addOut: #send;
-		for: #main
-			do: [ :send | 
+	sender := TauCTask
+		named: 'sender'
+		out: #send
+		state: {{#main.
+			[ :send | 
 					send
 						at: 1 put: 5;
 						at: 2 put: 6;
@@ -16,14 +17,14 @@ testSendReceiveExit
 						show: 'Send 5 6 7';
 						cr.
 					sender next: #exit ]
-			io:
+			.
 				{{#send.
 				nil.
-				3}};
+				3}} }}
 		world: s.
 	reader := TauCTask
-		in: #(#read)
-		out: #()
+		named: 'reader'
+		in: #read
 		state:
 			{{#main.
 			[ :read | 
