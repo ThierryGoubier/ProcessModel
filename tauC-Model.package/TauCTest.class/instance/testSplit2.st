@@ -51,4 +51,4 @@ testSplit2
 	((split portNamed: #output) at: 1) connectTo: (reader1 portNamed: #read).
 	((split portNamed: #output) at: 2) connectTo: (reader2 portNamed: #read).
 	s fullyConnected.
-	6 timesRepeat: [ s step ]
+	s exploreInRoassal

@@ -50,4 +50,4 @@ testJoin2
 	(sender2 portNamed: #send) connectTo: ((join portNamed: #input) at: 2).
 	(join portNamed: #output) connectTo: (reader portNamed: #read).
 	s fullyConnected.
-	6 timesRepeat: [ s step ]
+	s exploreInRoassal

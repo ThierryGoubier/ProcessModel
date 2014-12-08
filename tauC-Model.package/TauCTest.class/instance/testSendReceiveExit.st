@@ -37,4 +37,4 @@ testSendReceiveExit
 		world: s.
 	(sender portNamed: #send) connectTo: (reader portNamed: #read).
 	s fullyConnected.
-	4 timesRepeat: [ s step ]
+	s exploreInRoassal

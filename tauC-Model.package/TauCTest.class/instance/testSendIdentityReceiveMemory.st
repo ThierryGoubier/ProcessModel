@@ -56,4 +56,5 @@ testSendIdentityReceiveMemory
 	(sender portNamed: #send) connectTo: (transmit portNamed: #read).
 	(transmit portNamed: #send) connectTo: (reader portNamed: #read).
 	s fullyConnected.
-	5 timesRepeat: [ s step ]
+	2 timesRepeat: [ s step ].
+	s exploreInRoassal

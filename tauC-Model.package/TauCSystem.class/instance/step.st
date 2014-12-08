@@ -8,7 +8,7 @@ step
 	toExit := OrderedCollection new.
 	progress := false.
 	processes
-		do: [ :aProcess | 
+		reverseDo: [ :aProcess | 
 			progress := ([ aProcess runStep ]
 				on: TauCExitNotification
 				do: [ :ex | 

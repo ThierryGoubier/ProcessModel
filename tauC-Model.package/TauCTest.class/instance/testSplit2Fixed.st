@@ -51,4 +51,4 @@ testSplit2Fixed
 	((split portNamed: #output) at: 1) connectTo: (reader1 portNamed: #read) size: 2.
 	((split portNamed: #output) at: 2) connectTo: (reader2 portNamed: #read) size: 2.
 	s fullyConnected.
-	6 timesRepeat: [ s step ]
+	s exploreInRoassal

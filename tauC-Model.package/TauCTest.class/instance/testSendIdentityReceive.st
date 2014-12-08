@@ -53,5 +53,4 @@ testSendIdentityReceive
 	(sender portNamed: #send) connectTo: (transmit portNamed: #read).
 	(transmit portNamed: #send) connectTo: (reader portNamed: #read).
 	s fullyConnected.
-	s step.
-	s step
+	s exploreInRoassal

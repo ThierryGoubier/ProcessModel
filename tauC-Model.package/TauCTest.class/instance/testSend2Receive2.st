@@ -23,4 +23,4 @@ testSend2Receive2
 	(sender portNamed: #send) connectTo: (reader portNamed: #read ).
 	s fullyConnected.
 	s step.
-	s step
+	s exploreInRoassal
