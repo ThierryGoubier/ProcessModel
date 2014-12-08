@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfTauCModel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfTauCModel",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
