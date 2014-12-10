@@ -1,10 +1,23 @@
 testing
-testJoin
+testMatriceVecteur
 	"Test a join with two senders and one reader. "
 
-	| s join sender1 sender2 reader |
+	| s join mac sender1 sender2 reader |
 	s := TauCSystem new.
 	join := TauCJoin new: 2 in: s.
+	mac := TauCTask
+		named: 'mac'
+		in: #(#yin #xin #a)
+		out: #(#xout #yout)
+		state:
+			{{#main.
+			[ :yin :xin :a :xout :yout | 
+			yout at: 1 put: [ (yin first + xin first) * a first ].
+			{{#yin.
+			nil.
+			1}.
+			{#xin}} ]}}
+		world: s.
 	sender1 := TauCTask
 		named: 'sender1'
 		out: #send
@@ -12,8 +25,12 @@ testJoin
 			{{#main.
 			[ :send | 
 			send at: 1 put: 5.
-			'S1 send 5' logCr ].
-			#(#send)}}
+			Transcript
+				show: 'S1 send 5';
+				cr ].
+			{{#send.
+			nil.
+			1}}}}
 		world: s.
 	sender2 := TauCTask
 		named: 'sender2'
@@ -22,16 +39,25 @@ testJoin
 			{{#main.
 			[ :send | 
 			send at: 1 put: 6.
-			'S2 send 6' logCr ].
-			#(#send)}}
+			Transcript
+				show: 'S2 send 6';
+				cr ].
+			{{#send.
+			nil.
+			1}}}}
 		world: s.
 	reader := TauCTask
 		named: 'reader'
 		in: #read
 		state:
 			{{#main.
-			[ :read | ('Reader received ' , read first printString , ' ' , read second printString) logCr ].
-			#(#(#read 2))}}
+			[ :read | 
+			Transcript
+				show: 'Reader received ' , read first printString , ' ' , read second printString;
+				cr ].
+			{{#read.
+			nil.
+			2}}}}
 		world: s.
 	(sender1 portNamed: #send) connectTo: ((join portNamed: #input) at: 1).
 	(sender2 portNamed: #send) connectTo: ((join portNamed: #input) at: 2).

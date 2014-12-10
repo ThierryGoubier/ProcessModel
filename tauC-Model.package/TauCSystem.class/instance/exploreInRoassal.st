@@ -15,6 +15,7 @@ exploreInRoassal
 	RTSugiyamaLayout on: view elements edges: view edges.
 	self buildSlotsInView: view.
 	view canvas addMenu: 'Step' callback: [ self smallStep ].
+	view canvas addMenu: 'Run' callback: [ self step ].
 	view canvas addMenu: 'In' callback: [ RTZoomInMove on: view ].
 	view canvas addMenu: 'Out' callback: [ RTZoomOutMove on: view ].
 	view open

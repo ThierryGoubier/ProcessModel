@@ -13,18 +13,22 @@ step
 	nextState isNil
 		ifTrue: [ self next: #main ].
 	exec := nextState first.
-	args := nextState second "Test for validity. ".
+	args := nextState second.	"Test for validity. "
 	iodemands := nextState third
 		collect: [ :p | 
 			| port index size |
-			port := self portNamed: p first.
-			p second notNil
-				ifTrue: [ index := p second valueWithArguments: args ]
-				ifFalse: [ index := 0 ].
-			size := p third valueWithArguments: args.
+			index := 0.
+			size := 1.
+			p isArray
+				ifFalse: [ port := self portNamed: p ]
+				ifTrue: [ 
+					port := self portNamed: p first.
+					(p size > 2 and: [ p second notNil ])
+						ifTrue: [ index := p second valueWithArguments: args ].
+					size := p last valueWithArguments: args ].
 			{port.
 			index.
-			size} ] "Check that we can read the data. ".
+			size} ].
 	iodemands
 		do: [ :e | 
 			e first isIn
@@ -34,18 +38,18 @@ step
 			e first isOut
 				ifTrue: [ 
 					((e first at: e second) canWrite: e third)
-						ifFalse: [ ^ false ] ] ] "Read the data. ".
+						ifFalse: [ ^ false ] ] ].	"Check that we can read the data. "
 	iodata := iodemands
 		collect: [ :e | 
 			| d |
 			d := Array new: e third.
 			e first isIn
 				ifTrue: [ (e first at: e second) read: d ].
-			d ] "Execute the state. ".
-	exec valueWithArguments: args , iodata "Write back the data. ".
+			d ].	"Read the data. "
+	exec valueWithArguments: args , iodata.	"Execute the state. "
 	iodemands
 		with: iodata
 		do: [ :port :data | 
 			port first isOut
-				ifTrue: [ (port first at: port second) write: data ] ].
+				ifTrue: [ (port first at: port second) write: data ] ].	"Write back the data. "
 	^ true
