@@ -17,9 +17,7 @@ testSendIdentityReceiveMemory
 			i < 3
 				ifTrue: [ sender next: #main with: {(i + 1)} ]
 				ifFalse: [ sender next: #exit ] ].
-			{{#send.
-			nil.
-			1}}}}
+			#(#send)}}
 		world: s.
 	sender next: #main with: #(0).
 	transmit := TauCTask
@@ -33,12 +31,7 @@ testSendIdentityReceiveMemory
 			Transcript
 				show: 'Transmitted ' , read first printString;
 				cr ].
-			{{#send.
-			nil.
-			1}.
-			{#read.
-			nil.
-			1}}}}
+			#(#(#send) #read)}}
 		world: s.
 	reader := TauCTask
 		named: 'reader'
@@ -49,12 +42,9 @@ testSendIdentityReceiveMemory
 			Transcript
 				show: 'Received ' , read first printString;
 				cr ].
-			{{#read.
-			nil.
-			1}}}}
+			#(#read)}}
 		world: s.
 	(sender portNamed: #send) connectTo: (transmit portNamed: #read).
 	(transmit portNamed: #send) connectTo: (reader portNamed: #read).
 	s fullyConnected.
-	2 timesRepeat: [ s step ].
 	s exploreInRoassal

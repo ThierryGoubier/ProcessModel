@@ -11,12 +11,8 @@ testMatriceVecteur
 		out: #(#xout #yout)
 		state:
 			{{#main.
-			[ :yin :xin :a :xout :yout | 
-			yout at: 1 put: [ (yin first + xin first) * a first ].
-			{{#yin.
-			nil.
-			1}.
-			{#xin}} ]}}
+			[ :yin :xin :a :xout :yout | yout at: 1 put: [ (yin first + xin first) * a first ] ].
+			#(#yin #xin #a #xout #yout)}}
 		world: s.
 	sender1 := TauCTask
 		named: 'sender1'
@@ -28,9 +24,7 @@ testMatriceVecteur
 			Transcript
 				show: 'S1 send 5';
 				cr ].
-			{{#send.
-			nil.
-			1}}}}
+			#(#send)}}
 		world: s.
 	sender2 := TauCTask
 		named: 'sender2'
@@ -42,9 +36,7 @@ testMatriceVecteur
 			Transcript
 				show: 'S2 send 6';
 				cr ].
-			{{#send.
-			nil.
-			1}}}}
+			#(#send)}}
 		world: s.
 	reader := TauCTask
 		named: 'reader'
@@ -55,9 +47,7 @@ testMatriceVecteur
 			Transcript
 				show: 'Reader received ' , read first printString , ' ' , read second printString;
 				cr ].
-			{{#read.
-			nil.
-			2}}}}
+			#(#read)}}
 		world: s.
 	(sender1 portNamed: #send) connectTo: ((join portNamed: #input) at: 1).
 	(sender2 portNamed: #send) connectTo: ((join portNamed: #input) at: 2).

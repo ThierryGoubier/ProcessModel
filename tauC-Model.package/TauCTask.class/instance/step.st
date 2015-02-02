@@ -25,7 +25,9 @@ step
 					port := self portNamed: p first.
 					(p size > 2 and: [ p second notNil ])
 						ifTrue: [ index := p second valueWithArguments: args ].
-					size := p last valueWithArguments: args ].
+					size := p size > 1
+						ifTrue: [ p last valueWithArguments: args ]
+						ifFalse: [ 1 ] ].
 			{port.
 			index.
 			size} ].
