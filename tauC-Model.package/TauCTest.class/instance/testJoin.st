@@ -2,6 +2,8 @@ testing
 testJoin
 	"Test a join with two senders and one reader. "
 
+	"TauCTest new testJoin"
+	
 	| s join sender1 sender2 reader |
 	s := TauCSystem new.
 	join := TauCJoin new: 2 in: s.

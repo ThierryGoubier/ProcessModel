@@ -1,8 +1,8 @@
 testing
-testSend2Receive
+testSend2ReceiveFixed
 	"Test a very simple send receive. "
 
-	"TauCTest new testSend2Receive"
+	"TauCTest new testSend2ReceiveFixed"
 
 	| s sender reader |
 	s := TauCSystem new.
@@ -26,7 +26,7 @@ testSend2Receive
 			[ :read | ('Received ' , read first printString) logCr ].
 			#(#read)}}
 		world: s.
-	(sender portNamed: #send) connectTo: (reader portNamed: #read).
+	(sender portNamed: #send) connectTo: (reader portNamed: #read) size: 4.
 	s fullyConnected.
 	s step.
 	s exploreInRoassal

@@ -2,6 +2,8 @@ testing
 testSend2Receive2
 	"Test a very simple send receive. "
 
+	"TauCTest new testSend2Receive2"
+
 	| s sender reader |
 	s := TauCSystem new.
 	sender := TauCTask

@@ -2,6 +2,8 @@ testing
 testSplit2
 	"Test a split with two readers, but splitting by 2."
 
+	"TauCTest new testSplit2"
+
 	| s split sender reader1 reader2 |
 	s := TauCSystem new.
 	split := TauCSplit new: 2 step: 2 in: s.

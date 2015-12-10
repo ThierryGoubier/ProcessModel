@@ -2,6 +2,8 @@ testing
 testSplit2FixedNoProgress
 	"This test show what may be happening if there may be no progress."
 
+	"TauCTest new testSplit2FixedNoProgress"
+
 	| s split sender reader1 reader2 |
 	s := TauCSystem new.
 	split := TauCSplit new: 2 step: 2 in: s.

@@ -2,6 +2,8 @@ testing
 testSendIdentityReceive
 	"Test a send -> transmit -> receive. "
 
+	"TauCTest new testSendIdentityReceive"
+
 	| s sender transmit reader |
 	s := TauCSystem new.
 	sender := TauCTask

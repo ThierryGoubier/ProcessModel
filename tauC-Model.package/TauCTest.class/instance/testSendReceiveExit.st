@@ -2,6 +2,8 @@ testing
 testSendReceiveExit
 	"Test a very simple send receive. "
 
+	"TauCTest new testSendReceiveExit"
+
 	| s sender reader |
 	s := TauCSystem new.
 	sender := TauCTask
