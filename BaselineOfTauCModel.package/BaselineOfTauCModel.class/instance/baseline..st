@@ -6,5 +6,12 @@ baseline: spec
 		do: [ 
 			spec blessing: #baseline.
 			spec
-				package: 'tauC-Model';
+				configuration: 'Roassal2'
+					with: [ 
+							spec
+								versionString: #stable;
+								repository: 'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo40/main' ];
+				yourself.
+			spec
+				package: 'tauC-Model' with: [ spec requires: #('Roassal2') ];
 				group: 'default' with: #('tauC-Model') ]
