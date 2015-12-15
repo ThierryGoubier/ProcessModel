@@ -5,9 +5,9 @@ connectTo: aPort size: aMaxSize
 	| newPipe |
 	self isOut
 		ifFalse: [ ^ aPort connectTo: self ].
-	(size isNil or: [ index notNil ])
+	self isReadyForConnect
 		ifFalse: [ self error: 'Port "' , name , '" is an array of ports and should be accessed as "' , name , ' at: index"' ].
-	(aPort size isNil or: [ aPort index notNil ])
+	aPort isReadyForConnect
 		ifFalse: [ self error: 'Port "' , aPort name , '" is an array of ports and should be accessed as "' , aPort name , ' at: index"' ].
 	self assert: self isOut.
 	self assert: aPort isIn.
