@@ -1,9 +1,10 @@
-testing
-testSend2ReceiveFixed
-	"Test a very simple send receive. "
+examples
+send2ReceiveFixed
+	"A very simple send receive, with a fixed size FIFO"
 
-	"TauCTest new testSend2ReceiveFixed"
+	"TauCTest new send2ReceiveFixed"
 
+	<example>
 	| s sender reader |
 	s := TauCSystem new.
 	sender := TauCTask
@@ -26,7 +27,9 @@ testSend2ReceiveFixed
 			[ :read | ('Received ' , read first printString) logCr ].
 			#(#read)}}
 		world: s.
-	(sender portNamed: #send) connectTo: (reader portNamed: #read) size: 4.
+	(sender portNamed: #send)
+		connectTo: (reader portNamed: #read)
+		size: 4.
 	s fullyConnected.
 	s step.
 	s exploreInRoassal

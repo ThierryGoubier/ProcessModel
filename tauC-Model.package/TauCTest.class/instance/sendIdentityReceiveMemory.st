@@ -1,9 +1,10 @@
-testing
-testSendIdentityReceiveMemory
-	"Test a send -> transmit -> receive with a sender which has a memory. "
+examples
+sendIdentityReceiveMemory
+	"A send -> transmit -> receive with a sender which has a memory. "
 
-	"TauCTest new testSendIdentityReceiveMemory"
+	"TauCTest new sendIdentityReceiveMemory"
 
+	<example>
 	| s sender transmit reader |
 	s := TauCSystem new.
 	sender := TauCTask

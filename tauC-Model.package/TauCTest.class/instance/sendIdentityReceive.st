@@ -1,9 +1,10 @@
-testing
-testSendIdentityReceive
-	"Test a send -> transmit -> receive. "
+examples
+sendIdentityReceive
+	"A send -> transmit -> receive. "
 
-	"TauCTest new testSendIdentityReceive"
+	"TauCTest new sendIdentityReceive"
 
+	<example>
 	| s sender transmit reader |
 	s := TauCSystem new.
 	sender := TauCTask
@@ -16,9 +17,7 @@ testSendIdentityReceive
 			Transcript
 				show: 'Send 5';
 				cr ].
-			{{#send.
-			nil.
-			1}}}}
+			{{#send . nil . 1}}}}
 		world: s.
 	transmit := TauCTask
 		named: 'transmit'
@@ -31,12 +30,8 @@ testSendIdentityReceive
 			Transcript
 				show: 'Transmitted ' , read first printString;
 				cr ].
-			{{#send.
-			nil.
-			1}.
-			{#read.
-			nil.
-			1}}}}
+			{{#send . nil . 1}.
+			{#read . nil . 1}}}}
 		world: s.
 	reader := TauCTask
 		named: 'reader'
@@ -48,9 +43,7 @@ testSendIdentityReceive
 			Transcript
 				show: 'Received ' , read first printString;
 				cr ].
-			{{#read.
-			nil.
-			1}}}}
+			{{#read . nil . 1}}}}
 		world: s.
 	(sender portNamed: #send) connectTo: (transmit portNamed: #read).
 	(transmit portNamed: #send) connectTo: (reader portNamed: #read).

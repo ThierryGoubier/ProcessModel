@@ -1,9 +1,10 @@
-testing
-testSend2Receive2Exit
-	"Test a very simple send receive. "
+examples
+send2Receive2Exit
+	"A very simple send receive, with an exit."
 
 	"TauCTest new testSend2Receive2Exit"
 
+	<example>
 	| s sender reader |
 	s := TauCSystem new.
 	sender := TauCTask
@@ -19,9 +20,7 @@ testSend2Receive2Exit
 				show: 'Send 5 6';
 				cr.
 			sender next: #exit ].
-			{{#send.
-			nil.
-			2}}}}
+			{{#send . nil . 2}}}}
 		world: s.
 	reader := TauCTask
 		named: 'reader'
@@ -32,9 +31,7 @@ testSend2Receive2Exit
 			Transcript
 				show: 'Received ' , read first printString , ' ' , read second printString;
 				cr ].
-			{{#read.
-			nil.
-			2}}}}
+			{{#read . nil . 2}}}}
 		world: s.
 	(sender portNamed: #send) connectTo: (reader portNamed: #read).
 	s fullyConnected.

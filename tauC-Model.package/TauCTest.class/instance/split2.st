@@ -1,9 +1,10 @@
-testing
-testSplit2
-	"Test a split with two readers, but splitting by 2."
+examples
+split2
+	"A split with two readers, but splitting by 2."
 
-	"TauCTest new testSplit2"
+	"TauCTest new split2"
 
+	<example>
 	| s split sender reader1 reader2 |
 	s := TauCSystem new.
 	split := TauCSplit new: 2 step: 2 in: s.
@@ -19,9 +20,7 @@ testSplit2
 			Transcript
 				show: 'Send 5 6';
 				cr ].
-			{{#send.
-			nil.
-			2}}}}
+			{{#send . nil . 2}}}}
 		world: s.
 	reader1 := TauCTask
 		named: 'reader1'
@@ -32,9 +31,7 @@ testSplit2
 			Transcript
 				show: 'Reader1 received ' , read first printString;
 				cr ].
-			{{#read.
-			nil.
-			1}}}}
+			{{#read . nil . 1}}}}
 		world: s.
 	reader2 := TauCTask
 		named: 'reader2'
@@ -45,12 +42,12 @@ testSplit2
 			Transcript
 				show: 'Reader2 received ' , read first printString;
 				cr ].
-			{{#read.
-			nil.
-			1}}}}
+			{{#read . nil . 1}}}}
 		world: s.
 	(sender portNamed: #send) connectTo: (split portNamed: #input).
-	((split portNamed: #output) at: 1) connectTo: (reader1 portNamed: #read).
-	((split portNamed: #output) at: 2) connectTo: (reader2 portNamed: #read).
+	((split portNamed: #output) at: 1)
+		connectTo: (reader1 portNamed: #read).
+	((split portNamed: #output) at: 2)
+		connectTo: (reader2 portNamed: #read).
 	s fullyConnected.
 	s exploreInRoassal
