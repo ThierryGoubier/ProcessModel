@@ -7,7 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "TauCTest",
+	"name" : "TauCTests",
 	"pools" : [
 		 ],
 	"super" : "TestCase",
