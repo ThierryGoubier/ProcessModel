@@ -4,7 +4,6 @@ testSimpleSendReceive
 
 	| s sender reader |
 	s := TauCSystem new.
-	s := TauCSystem new.
 	sender := (s newTask: 'sender')
 		out: #send;
 		state: #main -> #send
@@ -16,5 +15,4 @@ testSimpleSendReceive
 		state: #main -> #read
 			do: [ :read | ('Received ' , read first printString) logCr ].
 	sender send >> reader read.
-	s fullyConnected.
-	s exploreInRoassal
+	s fullyConnected

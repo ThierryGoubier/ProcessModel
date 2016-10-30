@@ -2,7 +2,7 @@ examples
 join2
 	"Join (step 2) with two senders and one reader. "
 
-	"TauCTest new join2"
+	"TauCTest join2"
 
 	<example>
 	| s join sender1 sender2 reader |

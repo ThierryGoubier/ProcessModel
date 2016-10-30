@@ -2,7 +2,7 @@ examples
 join
 	"Test a join with two senders and one reader. "
 	<example>
-	"TauCTest new join"
+	"TauCTest join"
 	
 	| s join sender1 sender2 reader |
 	s := TauCSystem new.

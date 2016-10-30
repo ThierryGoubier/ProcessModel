@@ -1,2 +1,2 @@
-(name 'tauC-Model-ThierryGoubier.9' message 'First try at simpler syntax, with doesNotUnderstand for ports.' id '9064a8e0-cb7e-4f87-9fd6-9a8a72e1b6d6' date '30 October 2016' time '12:31:42.035033 am' author 'ThierryGoubier' ancestors ((name 'tauC-Model-ThierryGoubier.8' message 'Examples under move
-' id '9e9a53b9-a80b-5417-a6aa-d689d6a3708e' date '28 October 2016' time '5:17:33 pm' author 'ThierryGoubier' ancestors () stepChildren ())) stepChildren ())
+(name 'tauC-Model-ThierryGoubier.10' message 'Simpler syntax take 2' id 'cb394d52-74ad-4e66-9b44-8ad49c4b293d' date '30 October 2016' time '2:10:06.274845 pm' author 'ThierryGoubier' ancestors ((name 'tauC-Model-ThierryGoubier.9' message 'First try at simpler syntax, with doesNotUnderstand for ports.
+' id 'e0f4f535-456d-5948-b1fd-6bf9d0359140' date '30 October 2016' time '12:31:42 am' author 'ThierryGoubier' ancestors () stepChildren ())) stepChildren ())

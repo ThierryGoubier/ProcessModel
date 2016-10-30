@@ -2,7 +2,7 @@ examples
 send2Receive2
 	"A very simple send receive. "
 
-	"TauCTest new send2Receive2"
+	"TauCTest send2Receive2"
 
 	<example>
 	| s sender reader |
