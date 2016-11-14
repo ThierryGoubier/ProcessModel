@@ -7,47 +7,28 @@ sendIdentityReceiveMemory
 	<example>
 	| s sender transmit reader |
 	s := TauCSystem new.
-	sender := TauCTask
-		named: 'sender'
-		out: #send
-		state:
-			{{#main.
-			[ :i :send | 
+	sender := (s newTask: 'sender')
+		out: #send;
+		state: #main -> #send
+			do: [ :i :send | 
 			send at: 1 put: i.
-			Transcript
-				show: 'Send ' , i printString;
-				cr.
+			('Send ' , i printString) logCr.
 			i < 3
-				ifTrue: [ sender next: #main with: {(i + 1)} ]
+				ifTrue: [ sender next: #main with: i + 1 ]
 				ifFalse: [ sender next: #exit ] ].
-			#(#send)}}
-		world: s.
-	sender next: #main with: #(0).
-	transmit := TauCTask
-		named: 'transmit'
-		in: #read
-		out: #send
-		state:
-			{{#main.
-			[ :send :read | 
+	sender next: #main with: 0.
+	transmit := (s newTask: 'transmit')
+		in: #read;
+		out: #send;
+		state: #main -> #(#send #read)
+			do: [ :send :read | 
 			send at: 1 put: read first.
-			Transcript
-				show: 'Transmitted ' , read first printString;
-				cr ].
-			#(#(#send) #read)}}
-		world: s.
-	reader := TauCTask
-		named: 'reader'
-		in: #read
-		state:
-			{{#main.
-			[ :read | 
-			Transcript
-				show: 'Received ' , read first printString;
-				cr ].
-			#(#read)}}
-		world: s.
-	(sender portNamed: #send) connectTo: (transmit portNamed: #read).
-	(transmit portNamed: #send) connectTo: (reader portNamed: #read).
+			('Transmitted ' , read first printString) logCr ].
+	reader := (s newTask: 'reader')
+		in: #read;
+		state: #main -> #read
+			do: [ :read | ('Received ' , read printString) logCr ].
+	sender send >> transmit read.
+	transmit send >> reader read.
 	s fullyConnected.
 	s exploreInRoassal

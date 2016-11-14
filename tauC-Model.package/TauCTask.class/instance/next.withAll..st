@@ -1,8 +1,8 @@
 execution
-next: aStateName with: arg
+next: aStateName withAll: args
 	| stateSpec |
 	stateSpec := stateFunctions at: aStateName.
 	nextState := Array
 		with: stateSpec first
-		with: (Array with: arg)
+		with: args
 		with: stateSpec last

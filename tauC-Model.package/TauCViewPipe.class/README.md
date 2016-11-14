@@ -1,0 +1,1 @@
+I am a viewable pipe, one that update its state in a view.

@@ -1,35 +1,25 @@
 examples
 send2ReceiveFixed
-	"A very simple send receive, with a fixed size FIFO"
+	"A sender, a receiver, and a fifo with a fixed size."
 
-	"TauCTest new send2ReceiveFixed"
+	"TauCTest send2Receive2Fixed"
 
 	<example>
 	| s sender reader |
 	s := TauCSystem new.
-	sender := TauCTask
-		named: 'sender'
-		out: #(#send)
-		state:
-			{{#main.
-			[ :send | 
+	sender := (s newTask: 'sender')
+		out: #send;
+		state: #main -> #(#send 2)
+			do: [ :send | 
 			send
 				at: 1 put: 5;
 				at: 2 put: 6.
 			'Send 5 6' logCr ].
-			#(#(#send 2))}}
-		world: s.
-	reader := TauCTask
-		named: 'reader'
-		in: #(#read)
-		state:
-			{{#main.
-			[ :read | ('Received ' , read first printString) logCr ].
-			#(#read)}}
-		world: s.
-	(sender portNamed: #send)
-		connectTo: (reader portNamed: #read)
-		size: 4.
+	reader := (s newTask: 'reader')
+		in: #read;
+		state: #main -> #read
+			do: [ :read | ('Received ' , read first printString) logCr ].
+	sender send >> reader read size: 4.
 	s fullyConnected.
 	s step.
 	s exploreInRoassal

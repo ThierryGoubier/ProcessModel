@@ -1,13 +1,13 @@
 {
 	"class" : {
-		"join" : "ThierryGoubier 10/30/2016 13:45",
-		"join2" : "ThierryGoubier 10/30/2016 13:45",
-		"send2Receive1" : "ThierryGoubier 10/30/2016 13:45",
-		"send2Receive2" : "ThierryGoubier 10/30/2016 13:45",
-		"send2Receive2Exit" : "ThierryGoubier 10/29/2016 23:47",
-		"send2ReceiveFixed" : "ThierryGoubier 10/29/2016 23:47",
-		"sendIdentityReceive" : "ThierryGoubier 10/29/2016 23:47",
-		"sendIdentityReceiveMemory" : "ThierryGoubier 10/29/2016 23:47",
+		"join" : "ThierryGoubier 10/30/2016 18:39",
+		"join2" : "ThierryGoubier 10/30/2016 19:01",
+		"send2Receive1" : "ThierryGoubier 10/30/2016 23:25",
+		"send2Receive2" : "ThierryGoubier 10/30/2016 23:28",
+		"send2Receive2Exit" : "ThierryGoubier 10/30/2016 23:31",
+		"send2ReceiveFixed" : "ThierryGoubier 10/30/2016 23:35",
+		"sendIdentityReceive" : "ThierryGoubier 11/12/2016 23:58",
+		"sendIdentityReceiveMemory" : "ThierryGoubier 11/14/2016 23:05",
 		"sendReceive" : "ThierryGoubier 10/29/2016 23:47",
 		"sendReceiveExit" : "ThierryGoubier 10/29/2016 23:47",
 		"split" : "ThierryGoubier 10/29/2016 23:47",
@@ -16,8 +16,10 @@
 		"split2FixedNoProgress" : "ThierryGoubier 10/29/2016 23:47",
 		"splitFixed" : "ThierryGoubier 10/29/2016 23:48" },
 	"instance" : {
+		"testSimpleJoinWithArrayConnect" : "ThierryGoubier 10/30/2016 14:27",
 		"testSimpleSendReceive" : "ThierryGoubier 10/30/2016 13:44",
 		"testSimpleSplit" : "ThierryGoubier 10/30/2016 13:59",
+		"testSimpleSplitWithArrayConnect" : "ThierryGoubier 10/30/2016 14:13",
 		"testSystemSplit" : "ThierryGoubier 10/28/2016 17:17:33",
 		"testSystemSplit2" : "ThierryGoubier 10/28/2016 17:17:33",
 		"testSystemTask" : "ThierryGoubier 10/28/2016 17:17:33" } }

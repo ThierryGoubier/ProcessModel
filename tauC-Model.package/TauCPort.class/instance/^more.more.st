@@ -1,15 +1,22 @@
 network
->> aPort
-	"Can be done in two ways."
+>> aPortOrArray
+	"Can be done port to port, or array of ports to array of ports"
 
 	| newPipe |
 	self isOut
-		ifFalse: [ ^ aPort >> self ].
+		ifFalse: [ ^ aPortOrArray >> self ].
 	self isReadyForConnect
-		ifFalse: [ self error: 'Port "' , name , '" is an array of ports and should be accessed as "' , name , ' at: index"' ].
-	aPort isReadyForConnect
-		ifFalse: [ self error: 'Port "' , aPort name , '" is an array of ports and should be accessed as "' , aPort name , ' at: index"' ].
-	self assert: aPort isIn.
-	self pipe: (newPipe := TauCViewPipe from: self to: aPort).
-	aPort pipe: newPipe.
+		ifFalse: [ aPortOrArray size = self size
+				ifFalse: [ self error: 'Wrong number of ports to connect to' ].
+			1 to: size do: [ :i | (self at: i) >> (aPortOrArray at: i) ].
+			^ self ].	"Array case"
+	aPortOrArray isReadyForConnect
+		ifFalse: [ self
+				error:
+					'Port "' , aPortOrArray name
+						, '" is an array of ports and should be accessed as "'
+						, aPortOrArray name , ' at: index"' ].
+	self assert: aPortOrArray isIn.
+	self pipe: (newPipe := TauCViewPipe from: self to: aPortOrArray).
+	aPortOrArray pipe: newPipe.
 	^ pipe

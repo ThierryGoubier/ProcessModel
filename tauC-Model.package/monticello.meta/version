@@ -1,2 +1,2 @@
-(name 'tauC-Model-ThierryGoubier.10' message 'Simpler syntax take 2' id 'cb394d52-74ad-4e66-9b44-8ad49c4b293d' date '30 October 2016' time '2:10:06.274845 pm' author 'ThierryGoubier' ancestors ((name 'tauC-Model-ThierryGoubier.9' message 'First try at simpler syntax, with doesNotUnderstand for ports.
-' id 'e0f4f535-456d-5948-b1fd-6bf9d0359140' date '30 October 2016' time '12:31:42 am' author 'ThierryGoubier' ancestors () stepChildren ())) stepChildren ())
+(name 'tauC-Model-ThierryGoubier.11' message 'Improved the with memory api.' id '469fb2aa-49b6-4f6f-a5b2-66f91cb3bb5e' date '14 November 2016' time '11:10:15.217508 pm' author 'ThierryGoubier' ancestors ((name 'tauC-Model-ThierryGoubier.10' message 'Simpler syntax take 2
+' id 'a2b63ccb-2d07-5ddc-8106-ca505ab59e7c' date '30 October 2016' time '2:10:07 pm' author 'ThierryGoubier' ancestors () stepChildren ())) stepChildren ())
