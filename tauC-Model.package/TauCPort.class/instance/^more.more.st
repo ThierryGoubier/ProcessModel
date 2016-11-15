@@ -8,8 +8,8 @@ network
 	self isReadyForConnect
 		ifFalse: [ aPortOrArray size = self size
 				ifFalse: [ self error: 'Wrong number of ports to connect to' ].
-			1 to: size do: [ :i | (self at: i) >> (aPortOrArray at: i) ].
-			^ self ].	"Array case"
+			^ (1 to: size)
+				collect: [ :i | (self at: i) >> (aPortOrArray at: i) ] ].	"Array case"
 	aPortOrArray isReadyForConnect
 		ifFalse: [ self
 				error:
@@ -19,4 +19,4 @@ network
 	self assert: aPortOrArray isIn.
 	self pipe: (newPipe := TauCViewPipe from: self to: aPortOrArray).
 	aPortOrArray pipe: newPipe.
-	^ pipe
+	^ self pipe

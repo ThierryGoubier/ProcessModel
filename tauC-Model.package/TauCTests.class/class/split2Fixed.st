@@ -1,57 +1,31 @@
 examples
 split2Fixed
-	"A split with two readers. "
+	"A split with two readers, reading by 2."
 
-	"TauCTest new split2Fixed"
+	"TauCTest split2Fixed"
 
 	<example>
 	| s split sender reader1 reader2 |
 	s := TauCSystem new.
-	split := TauCSplit new: 2 step: 2 in: s.
-	sender := TauCTask
-		named: 'sender'
-		out: #send
-		state:
-			{{#main.
-			[ :send | 
+	split := s newSplit1to: 2 by: 2.
+	sender := (s newTask: 'sender')
+		out: #send;
+		state: #main -> #(#send 2)
+			do: [ :send | 
 			send
 				at: 1 put: 5;
 				at: 2 put: 6.
-			Transcript
-				show: 'Send 5 6';
-				cr ].
-			{{#send . nil . 2}}}}
-		world: s.
-	reader1 := TauCTask
-		named: 'reader1'
-		in: #read
-		state:
-			{{#main.
-			[ :read | 
-			Transcript
-				show: 'Reader1 received ' , read first printString;
-				cr ].
-			{{#read . nil . 1}}}}
-		world: s.
-	reader2 := TauCTask
-		named: 'reader2'
-		in: #read
-		state:
-			{{#main.
-			[ :read | 
-			Transcript
-				show: 'Reader2 received ' , read first printString;
-				cr ].
-			{{#read . nil . 1}}}}
-		world: s.
-	(sender portNamed: #send)
-		connectTo: (split portNamed: #input)
-		size: 2.
-	((split portNamed: #output) at: 1)
-		connectTo: (reader1 portNamed: #read)
-		size: 2.
-	((split portNamed: #output) at: 2)
-		connectTo: (reader2 portNamed: #read)
-		size: 2.
+			'Send 5 6' logCr ].
+	reader1 := (s newTask: 'reader1')
+		in: #read;
+		state: #main -> #read
+			do: [ :read | ('Reader1 received ' , read first printString) logCr ].
+	reader2 := (s newTask: 'reader2')
+		in: #read;
+		state: #main -> #read
+			do: [ :read | ('Reader2 received ' , read first printString) logCr ].
+	sender send >> split input size: 2.
+	split output first >> reader1 read size: 2.
+	split output second >> reader2 read size: 2.
 	s fullyConnected.
 	s exploreInRoassal

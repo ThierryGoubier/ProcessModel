@@ -1,2 +1,2 @@
-(name 'tauC-Model-ThierryGoubier.13' message 'Rework initialisation of Split and Join with new #next:with:' id '84615dc8-a1ad-4f40-a992-51d97c9e76ed' date '15 November 2016' time '7:40:25.848643 pm' author 'ThierryGoubier' ancestors ((name 'tauC-Model-ThierryGoubier.12' message 'Add >> on collections
-' id '33ac2245-6ee5-5f8a-ad3a-ff6900efa3df' date '15 November 2016' time '6:53:56 pm' author 'ThierryGoubier' ancestors () stepChildren ())) stepChildren ())
+(name 'tauC-Model-ThierryGoubier.14' message 'Done new API and examples' id 'ed2902e1-9fdd-413d-805f-d6092c35d81d' date '15 November 2016' time '11:26:13.355051 pm' author 'ThierryGoubier' ancestors ((name 'tauC-Model-ThierryGoubier.13' message 'Rework initialisation of Split and Join with new #next:with:
+' id 'd5257a72-7768-56c9-b554-df89f4afdb39' date '15 November 2016' time '7:40:26 pm' author 'ThierryGoubier' ancestors () stepChildren ())) stepChildren ())

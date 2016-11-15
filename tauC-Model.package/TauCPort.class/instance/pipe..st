@@ -1,7 +1,12 @@
 accessing
 pipe: aTauCPipe
 	aTauCPipe isNil
-		ifTrue: [ ^ pipe := nil ].
+		ifTrue: [ self size
+				ifNil: [ pipe := nil ]
+				ifNotNil: [ index
+						ifNil: [ pipe := Array new: self size ]
+						ifNotNil: [ pipe at: index put: nil ] ].
+			^ nil ].
 	self size isNil
 		ifTrue: [ pipe
 				ifNotNil: [ self error: 'Port "' , name , '" is already connected' ].
