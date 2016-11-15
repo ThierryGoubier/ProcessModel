@@ -2,7 +2,7 @@ examples
 sendIdentityReceiveMemory
 	"A send -> transmit -> receive with a sender which has a memory. "
 
-	"TauCTest new sendIdentityReceiveMemory"
+	"TauCTest sendIdentityReceiveMemory"
 
 	<example>
 	| s sender transmit reader |

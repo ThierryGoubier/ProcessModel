@@ -2,7 +2,7 @@ examples
 send2Receive2Exit
 	"A very simple send receive, with an exit."
 
-	"TauCTest new testSend2Receive2Exit"
+	"TauCTest testSend2Receive2Exit"
 
 	<example>
 	| s sender reader |

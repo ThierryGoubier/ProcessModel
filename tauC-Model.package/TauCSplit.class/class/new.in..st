@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 new: aSize in: aWorld
 	^ self new
 		size: aSize;
