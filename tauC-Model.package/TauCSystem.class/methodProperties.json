@@ -1,21 +1,24 @@
 {
-	"class" : {
-		"new" : "ThierryGoubier 12/5/2014 21:10:47" },
 	"instance" : {
-		"buildSlotsInView:" : "ThierryGoubier 12/7/2014 21:29",
-		"exit:" : "ThierryGoubier 12/5/2014 21:10:47",
-		"exploreInRoassal" : "ThierryGoubier 12/9/2014 14:51",
-		"fullyConnected" : "ThierryGoubier 12/5/2014 21:10:47",
-		"haltSystem" : "ThierryGoubier 12/5/2014 21:10:47",
-		"initialize" : "ThierryGoubier 12/5/2014 21:10:47",
-		"newJoin:" : "ThierryGoubier 10/28/2016 17:17:33",
-		"newJoin:to1by:" : "ThierryGoubier 10/28/2016 17:17:33",
-		"newSplit1to:" : "ThierryGoubier 10/28/2016 17:17:33",
-		"newSplit1to:by:" : "ThierryGoubier 10/28/2016 17:17:33",
-		"newTask" : "ThierryGoubier 10/28/2016 17:17:33",
-		"newTask:" : "ThierryGoubier 10/30/2016 00:14",
-		"processes" : "ThierryGoubier 10/28/2016 17:17:33",
-		"run" : "ThierryGoubier 12/5/2014 21:10:47",
-		"smallStep" : "ThierryGoubier 12/8/2014 07:53",
-		"start:" : "ThierryGoubier 12/5/2014 21:10:47",
-		"step" : "ThierryGoubier 12/8/2014 07:41" } }
+		"processes" : "ThierryGoubier 11/15/2016 23:26:14",
+		"newSplit1to:by:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"buildSlotsInView:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"newJoin:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"step" : "ThierryGoubier 11/15/2016 23:26:14",
+		"newSplit1to:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"initialize" : "ThierryGoubier 11/15/2016 23:26:14",
+		"haltSystem" : "ThierryGoubier 11/15/2016 23:26:14",
+		"exit:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"newJoin:to1by:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"newTask" : "ThierryGoubier 11/15/2016 23:26:14",
+		"newTask:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"run" : "ThierryGoubier 11/15/2016 23:26:14",
+		"fullyConnected" : "ThierryGoubier 11/15/2016 23:26:14",
+		"smallStep" : "ThierryGoubier 11/15/2016 23:26:14",
+		"start:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"exploreInRoassal" : "ThierryGoubier 12/4/2017 16:06"
+	},
+	"class" : {
+		"new" : "ThierryGoubier 11/15/2016 23:26:14"
+	}
+}

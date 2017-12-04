@@ -1,8 +1,9 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"canWrite:" : "ThierryGoubier 12/5/2014 21:10:47",
-		"close" : "ThierryGoubier 12/5/2014 21:10:47",
-		"isOut" : "ThierryGoubier 12/5/2014 21:10:47",
-		"write:" : "ThierryGoubier 12/5/2014 21:10:47" } }
+		"isOut" : "ThierryGoubier 11/15/2016 23:26:14",
+		"close" : "ThierryGoubier 11/15/2016 23:26:14",
+		"write:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"canWrite:" : "ThierryGoubier 11/15/2016 23:26:14"
+	},
+	"class" : { }
+}

@@ -1,9 +1,10 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"pipe" : "ThierryGoubier 12/7/2014 20:15",
-		"pipe:" : "ThierryGoubier 12/7/2014 20:15",
-		"printString" : "ThierryGoubier 12/7/2014 21:30",
-		"slot" : "ThierryGoubier 12/7/2014 20:15",
-		"slot:" : "ThierryGoubier 12/7/2014 20:15" } }
+		"pipe" : "ThierryGoubier 11/15/2016 23:26:14",
+		"pipe:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"slot:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"slot" : "ThierryGoubier 11/15/2016 23:26:14",
+		"printString" : "ThierryGoubier 11/15/2016 23:26:14"
+	},
+	"class" : { }
+}

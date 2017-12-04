@@ -1,7 +1,10 @@
 {
-	"class" : {
-		"new:in:" : "ThierryGoubier 11/15/2016 19:33",
-		"new:step:in:" : "ThierryGoubier 11/15/2016 19:33" },
 	"instance" : {
-		"size:" : "ThierryGoubier 12/5/2014 21:10:47",
-		"size:amount:" : "ThierryGoubier 11/15/2016 19:35" } }
+		"size:amount:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"size:" : "ThierryGoubier 11/15/2016 23:26:14"
+	},
+	"class" : {
+		"new:in:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"new:step:in:" : "ThierryGoubier 11/15/2016 23:26:14"
+	}
+}

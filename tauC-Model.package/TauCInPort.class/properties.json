@@ -1,14 +1,11 @@
 {
-	"category" : "tauC-Model",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "TauCInPort",
-	"pools" : [
-		 ],
 	"super" : "TauCPort",
-	"type" : "normal" }
+	"category" : "tauC-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TauCInPort",
+	"type" : "normal"
+}

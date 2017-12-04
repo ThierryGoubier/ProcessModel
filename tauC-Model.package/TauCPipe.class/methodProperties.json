@@ -1,18 +1,21 @@
 {
-	"class" : {
-		"from:to:" : "ThierryGoubier 12/5/2014 21:10:47",
-		"new" : "ThierryGoubier 12/5/2014 21:10:47" },
 	"instance" : {
-		"buffer" : "ThierryGoubier 12/5/2014 21:10:47",
-		"buildSlotsInView:" : "ThierryGoubier 12/7/2014 21:31",
-		"canRead:" : "ThierryGoubier 12/5/2014 21:10:47",
-		"canWrite:" : "ThierryGoubier 12/5/2014 21:10:47",
-		"close" : "ThierryGoubier 12/5/2014 21:10:47",
-		"end" : "ThierryGoubier 12/5/2014 21:10:47",
-		"end:" : "ThierryGoubier 12/5/2014 21:10:47",
-		"initialize" : "ThierryGoubier 12/5/2014 21:10:47",
-		"isConnected" : "ThierryGoubier 12/5/2014 21:10:47",
-		"read:" : "ThierryGoubier 12/7/2014 20:16",
-		"start" : "ThierryGoubier 12/5/2014 21:10:47",
-		"start:" : "ThierryGoubier 12/5/2014 21:10:47",
-		"write:" : "ThierryGoubier 12/7/2014 20:17" } }
+		"write:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"close" : "ThierryGoubier 11/15/2016 23:26:14",
+		"read:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"end" : "ThierryGoubier 11/15/2016 23:26:14",
+		"canRead:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"buildSlotsInView:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"start" : "ThierryGoubier 11/15/2016 23:26:14",
+		"initialize" : "ThierryGoubier 11/15/2016 23:26:14",
+		"buffer" : "ThierryGoubier 11/15/2016 23:26:14",
+		"isConnected" : "ThierryGoubier 11/15/2016 23:26:14",
+		"start:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"end:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"canWrite:" : "ThierryGoubier 11/15/2016 23:26:14"
+	},
+	"class" : {
+		"new" : "ThierryGoubier 11/15/2016 23:26:14",
+		"from:to:" : "ThierryGoubier 11/15/2016 23:26:14"
+	}
+}

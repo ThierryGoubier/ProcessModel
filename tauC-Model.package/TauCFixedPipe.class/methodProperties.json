@@ -1,6 +1,9 @@
 {
-	"class" : {
-		"from:to:size:" : "ThierryGoubier 12/5/2014 21:10:47" },
 	"instance" : {
-		"canWrite:" : "ThierryGoubier 12/5/2014 21:10:47",
-		"size:" : "ThierryGoubier 12/5/2014 21:10:47" } }
+		"canWrite:" : "ThierryGoubier 11/15/2016 23:26:14",
+		"size:" : "ThierryGoubier 11/15/2016 23:26:14"
+	},
+	"class" : {
+		"from:to:size:" : "ThierryGoubier 11/15/2016 23:26:14"
+	}
+}

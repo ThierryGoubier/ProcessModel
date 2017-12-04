@@ -1,25 +1,28 @@
 {
-	"class" : {
-		"join" : "ThierryGoubier 10/30/2016 18:39",
-		"join2" : "ThierryGoubier 10/30/2016 19:01",
-		"send2Receive1" : "ThierryGoubier 10/30/2016 23:25",
-		"send2Receive2" : "ThierryGoubier 10/30/2016 23:28",
-		"send2Receive2Exit" : "ThierryGoubier 11/15/2016 19:38",
-		"send2ReceiveFixed" : "ThierryGoubier 10/30/2016 23:35",
-		"sendIdentityReceive" : "ThierryGoubier 11/12/2016 23:58",
-		"sendIdentityReceiveMemory" : "ThierryGoubier 11/15/2016 19:37",
-		"sendReceive" : "ThierryGoubier 11/15/2016 19:37",
-		"sendReceiveExit" : "ThierryGoubier 11/15/2016 19:37",
-		"split" : "ThierryGoubier 11/15/2016 19:37",
-		"split2" : "ThierryGoubier 11/15/2016 19:37",
-		"split2Fixed" : "ThierryGoubier 11/15/2016 23:01",
-		"split2FixedNoProgress" : "ThierryGoubier 11/15/2016 23:24",
-		"splitFixed" : "ThierryGoubier 11/15/2016 23:25" },
 	"instance" : {
-		"testSimpleJoinWithArrayConnect" : "ThierryGoubier 10/30/2016 14:27",
-		"testSimpleSendReceive" : "ThierryGoubier 10/30/2016 13:44",
-		"testSimpleSplit" : "ThierryGoubier 10/30/2016 13:59",
-		"testSimpleSplitWithArrayConnect" : "ThierryGoubier 10/30/2016 14:13",
-		"testSystemSplit" : "ThierryGoubier 10/28/2016 17:17:33",
-		"testSystemSplit2" : "ThierryGoubier 10/28/2016 17:17:33",
-		"testSystemTask" : "ThierryGoubier 10/28/2016 17:17:33" } }
+		"testSystemSplit2" : "ThierryGoubier 11/15/2016 23:26:14",
+		"testSimpleSendReceive" : "ThierryGoubier 11/15/2016 23:26:14",
+		"testSystemSplit" : "ThierryGoubier 11/15/2016 23:26:14",
+		"testSimpleSplit" : "ThierryGoubier 11/15/2016 23:26:14",
+		"testSystemTask" : "ThierryGoubier 11/15/2016 23:26:14",
+		"testSimpleSplitWithArrayConnect" : "ThierryGoubier 11/15/2016 23:26:14",
+		"testSimpleJoinWithArrayConnect" : "ThierryGoubier 11/15/2016 23:26:14"
+	},
+	"class" : {
+		"join2" : "ThierryGoubier 11/15/2016 23:26:14",
+		"send2ReceiveFixed" : "ThierryGoubier 11/15/2016 23:26:14",
+		"split" : "ThierryGoubier 11/15/2016 23:26:14",
+		"sendIdentityReceiveMemory" : "ThierryGoubier 11/15/2016 23:26:14",
+		"splitFixed" : "ThierryGoubier 11/15/2016 23:26:14",
+		"join" : "ThierryGoubier 11/15/2016 23:26:14",
+		"send2Receive2" : "ThierryGoubier 11/15/2016 23:26:14",
+		"send2Receive2Exit" : "ThierryGoubier 11/15/2016 23:26:14",
+		"sendReceive" : "ThierryGoubier 11/15/2016 23:26:14",
+		"split2" : "ThierryGoubier 11/15/2016 23:26:14",
+		"split2FixedNoProgress" : "ThierryGoubier 11/15/2016 23:26:14",
+		"sendReceiveExit" : "ThierryGoubier 11/15/2016 23:26:14",
+		"sendIdentityReceive" : "ThierryGoubier 11/15/2016 23:26:14",
+		"send2Receive1" : "ThierryGoubier 11/15/2016 23:26:14",
+		"split2Fixed" : "ThierryGoubier 11/15/2016 23:26:14"
+	}
+}

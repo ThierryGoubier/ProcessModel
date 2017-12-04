@@ -6,12 +6,13 @@ exploreInRoassal
 	view := RTView new.
 	shape := RTEllipse new size: 40.
 	view addAll: (shape elementsOn: processes) @ RTDraggable @ RTPopup.
-	edges := RTEdge
-		buildEdgesFromObjects: processes
-		from: #yourself
-		toAll: #destinations
-		using: (RTLine new color: (Color blue alpha: 0.8)) + (RTSimpleArrowHead new color: (Color blue alpha: 0.8))
-		inView: view.
+	RTEdgeBuilder new
+		view: view;
+		shape:
+			(RTLine new color: (Color blue alpha: 0.8))
+				+ (RTSimpleArrowHead new color: (Color blue alpha: 0.8));
+		objects: processes;
+		connectFrom: #yourself toAll: #destinations.
 	RTSugiyamaLayout on: view elements edges: view edges.
 	self buildSlotsInView: view.
 	view canvas addMenu: 'Step' callback: [ self smallStep ].
