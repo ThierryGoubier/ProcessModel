@@ -1,3 +1,3 @@
 accessing
 outPorts
-	^ ports select: #isOut
+	^ ports select: [ :each | each isOut ]

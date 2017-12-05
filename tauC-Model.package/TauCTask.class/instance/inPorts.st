@@ -1,3 +1,3 @@
 accessing
 inPorts
-	^ ports select: #isIn
+	^ ports select: [ :each | each isIn ]
