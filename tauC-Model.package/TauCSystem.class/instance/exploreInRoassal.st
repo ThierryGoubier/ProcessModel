@@ -13,8 +13,7 @@ exploreInRoassal
 		do: [ :p | 
 			view add: (shape elementOn: p) @ RTDraggable @ RTPopup.
 			pipes addAll: p outPipes.
-			view
-				add: (fifoShape elementsOn: p outPipes) @ RTDraggable @ RTPopup ].
+			view add: (fifoShape elementsOn: p outPipes) @ RTDraggable ].
 	pipes := pipes asArray.
 	RTEdgeBuilder new
 		view: view;

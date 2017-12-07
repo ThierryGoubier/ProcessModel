@@ -1,2 +1,2 @@
-(name 'tauC-Model-ThierryGoubier.16' message 'Done, updated graphics with fifos' id '4b8a5abe-001c-0d00-a9f7-82510ab96a1e' date '5 December 2017' time '11:03:36.421429 pm' author 'ThierryGoubier' ancestors ((name 'tauC-Model-ThierryGoubier.15' message 'Roassal deprecation.Beware: RTEdgeBuilder is dumber than expected: #shape: must come before #connectFrom:toAll:
-' id 'a808e243-505e-5a2a-8a80-2540470f3b54' date '4 December 2017' time '4:10:02 pm' author 'ThierryGoubier' ancestors () stepChildren ())) stepChildren ())
+(name 'tauC-Model-ThierryGoubier.17' message 'Chow a join / plist example)' id '19481bd2-1e1c-0d00-ad4d-8c3305eef87a' date '7 December 2017' time '10:56:36.838876 am' author 'ThierryGoubier' ancestors ((name 'tauC-Model-ThierryGoubier.16' message 'Done, updated graphics with fifos
+' id '85e6880b-7eb3-5e44-a385-780e381364e8' date '5 December 2017' time '11:03:37 pm' author 'ThierryGoubier' ancestors () stepChildren ())) stepChildren ())
