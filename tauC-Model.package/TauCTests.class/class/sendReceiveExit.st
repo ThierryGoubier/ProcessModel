@@ -9,13 +9,14 @@ sendReceiveExit
 	s := TauCSystem new.
 	sender := (s newTask: 'sender')
 		out: #send;
-		state: #main -> #send
+		state: #main -> #(#send 3)
 			do: [ :send | 
 			send
 				at: 1 put: 5;
 				at: 2 put: 6;
 				at: 3 put: 7.
-			'Send 5 6 7' logCr ].
+			'Send 5 6 7' logCr.
+			sender next: #exit ].
 	reader := (s newTask: 'reader')
 		in: #read;
 		state: #main -> #read
