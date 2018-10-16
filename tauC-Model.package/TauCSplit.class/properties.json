@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"size",
-		"amount"
-	],
+	"instvars" : [ ],
 	"name" : "TauCSplit",
 	"type" : "normal"
 }

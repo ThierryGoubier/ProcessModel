@@ -1,16 +1,15 @@
 initialize-release
 size: aSize amount: anAmount
-	size := aSize.
 	self
 		in: #(#input);
 		out:
 			{{#output.
-			size}};
+			aSize}};
 		state:
 			{{#main.
 			[ :i :in :out | 
 			1 to: anAmount do: [ :k | out at: k put: (in at: k) ].
-			self next: #main with: i % size + 1 ].
+			self next: #main with: i % aSize + 1 ].
 			{{#input.
 			nil.
 			anAmount}.
