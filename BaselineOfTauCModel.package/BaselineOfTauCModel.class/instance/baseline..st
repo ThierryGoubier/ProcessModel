@@ -10,7 +10,7 @@ baseline: spec
 					with: [ 
 							spec
 								versionString: #stable;
-								repository: 'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo50/main' ];
+								repository: 'github://ObjectProfile/Roassal2:pharo7/src' ];
 				yourself.
 			spec
 				package: 'tauC-Model' with: [ spec requires: #('Roassal2') ];
