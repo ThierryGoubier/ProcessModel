@@ -6,12 +6,10 @@ baseline: spec
 		do: [ 
 			spec blessing: #baseline.
 			spec
-				configuration: 'Roassal2'
-					with: [ 
-							spec
-								versionString: #stable;
+				baseline: 'Roassal2'
+					with: [ spec
 								repository: 'github://ObjectProfile/Roassal2:pharo7/src' ];
-				yourself.
+				import: 'Roassal2'.
 			spec
 				package: 'tauC-Model' with: [ spec requires: #('Roassal2') ];
 				group: 'default' with: #('tauC-Model') ]
